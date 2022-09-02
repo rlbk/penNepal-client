@@ -1,0 +1,76 @@
+* {
+  --defaultBlack: #241b1b;
+  --defaultBlue: #3c41df;
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --gray: #788097;
+  --conUsCol: #333697;
+  --footCol: #ebebf8;
+  --btnCol: #50d282;
+}
+
+body {
+  text-align: center !important;
+
+  background: rgba(60, 65, 223, 0.04);
+  font-size: 16px !important;
+}
+
+.button {
+  font-size: 16px;
+  background-color: var(--btnCol);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  border: 2px solid var(--btnCol);
+  font-weight: 600;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--defaultBlack);
+  transition: 0.5s ease-out;
+}
+
+.sectionTitle {
+  font-size: 38px;
+  text-align: center;
+}
+
+.sub-title {
+  font-weight: 700;
+}
+
+.form-login {
+  background: rgb(0, 101, 219);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 101, 219) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* Responsive */
+@media screen and (max-width: 1110px) {
+  .button {
+    font-size: 10px;
+
+    padding: 5px 16px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 16px !important;
+  }
+  .sectionTitle {
+    font-size: 26px !important;
+  }
+
+  .sub-title {
+    font-weight: 500;
+    font-size: 22px !important;
+  }
+} ;
